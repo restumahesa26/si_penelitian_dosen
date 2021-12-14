@@ -14,7 +14,7 @@
         <div class="card-body">
             <a href="{{ route('penelitian.create') }}" class="btn btn-primary mb-3">Tambah Data Penelitian</a>
             @if (Auth::user()->role === 'ADMIN')
-                <a href="{{ route('penelitian.index-2') }}" class="btn btn-primary mb-3">Lihat Data Penelitian</a>
+                <a href="{{ route('penelitian.index-2') }}" class="btn btn-primary mb-3">Lihat Data Penelitian Dosen</a>
             @endif
             <div class="table-responsive">
                 <table class="table table-bordered table-hover text-nowrap">
