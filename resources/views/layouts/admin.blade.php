@@ -12,6 +12,12 @@
 
     @include('includes.style')
 
+    <style>
+        input::placeholder {
+            opacity: .5 !important;
+        }
+    </style>
+
 </head>
 
 <body id="page-top">
