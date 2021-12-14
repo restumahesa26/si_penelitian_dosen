@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/logo2.svg" width="150" alt="jadoo" />
-              <p class="fs--1 text-secondary mb-0 fw-medium">Book your trip in minute, get full Control for much longer.</p>
+              <p class="fs--1 text-secondary mb-0 fw-medium">Website repositori untuk mempublikasikan penelitian dosen</p>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
