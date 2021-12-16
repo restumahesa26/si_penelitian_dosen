@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="img/logo/logo.png" rel="icon">
-    <title>RuangAdmin - Dashboard</title>
+    <title>Penelitian Dosen - Dashboard</title>
 
     @include('includes.style')
 
