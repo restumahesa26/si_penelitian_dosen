@@ -4,7 +4,7 @@
             <span>copyright &copy; <script>
                     document.write(new Date().getFullYear());
                 </script> - Design & Developed by
-                <b>Kuli Coding'19</b>
+                <b>Kelompok PPL</b>
             </span>
         </div>
     </div>
