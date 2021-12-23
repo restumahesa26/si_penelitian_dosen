@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="img/logo/logo.png" rel="icon">
-    <title>RuangAdmin - Dashboard</title>
+    <title>Penelitian Dosen - Dashboard</title>
 
     @include('includes.style')
 
@@ -38,21 +38,21 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                                <h5 class="modal-title" id="exampleModalLabelLogout">Warning</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Are you sure you want to logout?</p>
+                                <p>Apakah kamu yakin ingin keluar?</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-primary"
-                                    data-dismiss="modal">Cancel</button>
+                                    data-dismiss="modal">Tidak</button>
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
                                     <a class="btn btn-primary" href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">
-                                        Logout
+                                        Keluar
                                     </a>
                                 </form>
                             </div>

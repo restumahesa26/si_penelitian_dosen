@@ -21,6 +21,7 @@
                     </a>
                 </form>
                 </li>
+              <li class="nav-item px-3 px-xl-1"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" aria-current="page" href="{{ route('dashboard') }}">Dashboard</a></li>
               @else
               <li class="nav-item px-3 px-xl-1"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" aria-current="page" href="{{ route('login') }}">Masuk</a></li>
               <li class="nav-item px-3 px-xl-1"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="{{ route('register') }}">Registrasi</a></li>

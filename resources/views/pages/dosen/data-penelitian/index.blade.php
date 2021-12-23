@@ -5,7 +5,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Data Penelitian</h1>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
             <li class="breadcrumb-item active" aria-current="page">Data Penelitian</li>
         </ol>
     </div>
@@ -14,7 +14,7 @@
         <div class="card-body">
             <a href="{{ route('penelitian.create') }}" class="btn btn-primary mb-3">Tambah Data Penelitian</a>
             @if (Auth::user()->role === 'ADMIN')
-                <a href="{{ route('penelitian.index-2') }}" class="btn btn-primary mb-3">Lihat Data Penelitian Dosen</a>
+                <a href="{{ route('penelitian.index-2') }}" class="btn btn-primary mb-3">Lihat Data Penelitian Pengurus</a>
             @endif
             <div class="table-responsive">
                 <table class="table table-bordered table-hover text-nowrap">
@@ -26,7 +26,7 @@
                             <th>Anggota 2</th>
                             <th>Status</th>
                             <th>Pesan</th>
-                            <th>Aksi</th>
+                            <th>Link</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -148,3 +148,4 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
     });
 </script>
 @endpush
+

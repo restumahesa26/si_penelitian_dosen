@@ -24,7 +24,7 @@ class CreatePenelitiansTable extends Migration
             $table->enum('status', ['Submit','Accept','Reject'])->default('Submit');
             $table->string('link_jurnal');
             $table->string('judul_jurnal');
-            $table->string('link_luaran_1');
+            $table->string('link_luaran_1')->nullable();
             $table->string('link_luaran_2')->nullable();
             $table->string('pesan')->nullable();
             $table->timestamps();
