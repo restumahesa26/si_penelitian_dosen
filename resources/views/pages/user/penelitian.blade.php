@@ -4,13 +4,24 @@
 <section class="pt-5 pt-md-9" id="service">
 
     <div class="container">
-        <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/img/category/shape.svg"
+        <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="{{ url('assets/img/category/shape.svg') }}"
                 style="max-width: 200px" alt="service" /></div>
         <div class="mb-7 text-center">
             <h5 class="text-secondary">FAKULTAS TEKNIK</h5>
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">DATA PENELITIAN DOSEN</h3>
         </div>
+        @if ($message = Session::get('error'))
+            <script>
+                alert('{{ $message }}')
+            </script>
+        @endif
         <div class="row">
+            <form action="{{ route('home-penelitian.search') }}" method="GET">
+            <div class="d-flex justify-content-center align-items-center">
+                <input type="search" name="search" id="search" class="form-control mb-3 mx-3" placeholder="Masukkan kata kunci judul program, jenis program">
+                <button type="submit" class="btn btn-primary mb-3 mx-3">Cari</button>
+            </div>
+        </form>
             <div class="table-responsive ">
                 <table class="table table-bordered text-nowrap" id="table">
                     <thead>
@@ -66,13 +77,4 @@
         </div>
     </div>
     <!-- end of .container-->
-
     @endsection
-
-    @push('addon-script')
-        <script>
-            $(document).ready(function() {
-                $('#table').DataTable();
-            });
-        </script>
-    @endpush

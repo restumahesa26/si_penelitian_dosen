@@ -47,4 +47,6 @@
     @include('includes.user.script')
   </body>
 
+  @stack('addon-script')
+
 </html>

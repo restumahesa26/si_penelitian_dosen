@@ -7,6 +7,7 @@ use App\Http\Controllers\Data\ManajerController;
 use App\Http\Controllers\Data\PengurusController;
 use App\Http\Controllers\PenelitianController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchController;
 use App\Models\Penelitian;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,8 @@ Route::get('/penelitian-home', function () {
         'penelitians' => $penelitian
     ]);
 })->name('home-penelitian');
+
+Route::get('/penelitian-home/search/', [SearchController::class, 'penelitian_search'])->name('home-penelitian.search');
 
 Route::resource('data-dosen', DosenController::class);
 Route::resource('data-pengurus', PengurusController::class);
