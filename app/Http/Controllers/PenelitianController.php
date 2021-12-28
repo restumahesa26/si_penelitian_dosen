@@ -68,7 +68,6 @@ class PenelitianController extends Controller
     {
         $request->validate([
             'anggota_1' => ['required', 'string', 'max:255'],
-            'anggota_2' => ['required', 'string', 'max:255'],
             'jenis_program' => ['required', 'string', 'max:255'],
             'judul_program' => ['required', 'string', 'max:255'],
             'link_jurnal' => ['required', 'string', 'max:255'],

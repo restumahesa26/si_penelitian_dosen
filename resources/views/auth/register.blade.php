@@ -68,7 +68,7 @@
             </div>
 
             <div class="mt-4">
-                <x-label for="nip" :value="__('NIP')" />
+                <x-label for="nip" :value="__('NIP/NIDN')" />
 
                 <x-input id="nip" class="block mt-1 w-full" type="text" name="nip" :value="old('nip')" required autofocus />
             </div>
