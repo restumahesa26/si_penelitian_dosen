@@ -20,7 +20,7 @@
                     <input type="text" name="nama" id="nama" class="form-control" placeholder="Masukkan Nama..." value="{{ $item->nama }}">
                 </div>
                 <div class="form-group">
-                    <label for="nip">NIP</label>
+                    <label for="nip">NIP/NIDN</label>
                     <input type="text" name="nip" id="nip" class="form-control" placeholder="Masukkan NIP..." value="{{ $item->nip }}">
                 </div>
                 <div class="form-group">

@@ -27,10 +27,9 @@
                     <thead>
                         <tr>
                             <td>No</td>
-                            <td>Nama</td>
+                            <td>File</td>
                             <td>Jenis Program</td>
                             <td>Judul Program</td>
-                            <td>File</td>
                             <td>Link Jurnal</td>
                             <td>Link Luaran 1</td>
                             <td>Link Luaran 2</td>
@@ -40,12 +39,11 @@
                         @forelse ($penelitians as $item)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $item->user->nama }}</td>
-                            <td>{{ $item->jenis_program }}</td>
-                            <td>{{ $item->judul_program }}</td>
                             <td>
                                 <a href="{{ asset('storage/file-program/' . $item->nama_file) }}" class="btn btn-primary">Lihat File</a>
                             </td>
+                            <td>{{ $item->jenis_program }}</td>
+                            <td>{{ $item->judul_program }}</td>
                             @if ($item->link_jurnal)
                             <td>
                                 <a href="{{ $item->link_jurnal }}" class="btn btn-primary">Link Jurnal</a>
