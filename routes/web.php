@@ -27,7 +27,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/penelitian-home', function () {
-    $penelitian = Penelitian::where('status', 'Accept')->get();
+    $penelitian = Penelitian::where('status', 'Accept')->paginate(10);
 
     return view('pages.user.penelitian', [
         'penelitians' => $penelitian

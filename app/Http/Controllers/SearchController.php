@@ -11,7 +11,12 @@ class SearchController extends Controller
     {
         $search = $request->search;
 
-        $penelitian = Penelitian::where('judul_program', 'like',"%".$search."%")->orWhere('jenis_program', 'like',"%".$search."%")->get();
+        $penelitian = Penelitian::where('status', 'Accept')
+        ->where(function($query) use ($search){
+            $query->where('jenis_program', 'LIKE', '%'.$search.'%')
+                    ->orWhere('judul_program', 'LIKE', '%'.$search.'%');
+        })->paginate(10);
+        $penelitian->appends(['search' => $search]);
 
         if ($penelitian->count() > 0) {
             return view('pages.user.penelitian', [
